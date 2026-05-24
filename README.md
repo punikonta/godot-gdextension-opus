@@ -16,7 +16,7 @@ I haven't confirmed successful builds on any platform other than Windows on x86_
 
 TODOs:
 
-* test builds on other platforms/architextures
+* test builds on other platforms/architectures
 * provide example project and documentation
 * readme extension
 

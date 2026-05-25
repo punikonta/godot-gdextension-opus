@@ -22,6 +22,6 @@ TODOs:
 
 ## License
 
-The template uses the original public domain license provided by the `godot-cpp-template`. The extention itself (opus_node.h and opus_node.cpp) is licensed under the MIT License and located within the src directory of this repository.
+The template uses the original public domain license provided by the `godot-cpp-template`. The extention itself (`opus_node.h` and `opus_node.cpp`) is licensed under the MIT License and located within the src directory of this repository.
 
 The [Opus Audio Codec](https://opus-codec.org/) is licensed under the [three clause BSD license](https://opus-codec.org/license/).

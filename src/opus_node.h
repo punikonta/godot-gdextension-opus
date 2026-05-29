@@ -30,13 +30,13 @@ public:
     OpusNode();
     ~OpusNode();
 
-    void set_bitrate(int bitrate);
+    void set_bitrate(int p_bitrate);
     int get_bitrate() const;
 
-    void set_complexity(int complexity);
+    void set_complexity(int p_complexity);
     int get_complexity() const;
 
-    void set_sample_rate(int sample_rate);
+    void set_sample_rate(int p_sample_rate);
     int get_sample_rate() const;
 
     int get_frame_size() const; 

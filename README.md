@@ -12,7 +12,7 @@ This repo is currently work in progress, but it mostly already works as is.
 
 The `SConstruct` has been extended to build `opus-1.6.1` (sources included within this repo) along with the extension itself, so no extra steps are needed to build this extension, other than calling `scons` itself.
 
-I haven't confirmed successful builds on any platform other than Windows on x86_64 yet.
+I haven't confirmed successful builds on any platforms other than Windows and Linux on x86_64 yet.
 
 TODOs:
 

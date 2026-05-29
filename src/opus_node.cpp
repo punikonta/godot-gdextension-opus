@@ -64,8 +64,8 @@ void OpusNode::_update_opus_state() {
     opus_encoder_ctl(encoder, OPUS_SET_SIGNAL(OPUS_SIGNAL_VOICE)); 
 }
 
-void OpusNode::set_bitrate(int bitrate) {
-    bitrate = bitrate;
+void OpusNode::set_bitrate(int p_bitrate) {
+    bitrate = p_bitrate;
     if (encoder) {
         opus_encoder_ctl(encoder, OPUS_SET_BITRATE(bitrate));
     }
@@ -75,8 +75,8 @@ int OpusNode::get_bitrate() const {
     return bitrate; 
 }
 
-void OpusNode::set_complexity(int complexity) {
-    complexity = complexity;
+void OpusNode::set_complexity(int p_complexity) {
+    complexity = p_complexity;
     if (encoder) {
         opus_encoder_ctl(encoder, OPUS_SET_COMPLEXITY(complexity));
     }
@@ -86,16 +86,16 @@ int OpusNode::get_complexity() const {
     return complexity; 
 }
 
-void OpusNode::set_sample_rate(int sample_rate) {
-    int actual_rate = sample_rate;
-    if (sample_rate == 0) actual_rate = 8000;
-    else if (sample_rate == 1) actual_rate = 12000;
-    else if (sample_rate == 2) actual_rate = 16000;
-    else if (sample_rate == 3) actual_rate = 24000;
-    else if (sample_rate == 4) actual_rate = 48000;
+void OpusNode::set_sample_rate(int p_sample_rate) {
+    int actual_rate = p_sample_rate;
+    if (p_sample_rate == 0) actual_rate = 8000;
+    else if (p_sample_rate == 1) actual_rate = 12000;
+    else if (p_sample_rate == 2) actual_rate = 16000;
+    else if (p_sample_rate == 3) actual_rate = 24000;
+    else if (p_sample_rate == 4) actual_rate = 48000;
 
-    if (sample_rate != actual_rate) {
-        sample_rate = actual_rate;
+    if (p_sample_rate != actual_rate) {
+        p_sample_rate = actual_rate;
         _update_opus_state();
     }
 }
@@ -107,7 +107,7 @@ int OpusNode::get_sample_rate() const {
         case 16000: return 2;
         case 24000: return 3;
         case 48000: return 4;
-        default: return 4;
+        default: return 3;
     }
 }
 
